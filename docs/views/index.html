@@ -1,0 +1,36 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+GOV.UK Prototype Kit
+{% endblock %}
+
+{% block beforeContent %}
+{% endblock %}
+
+{% block content %}
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <h1 class="govuk-heading-xl">GOV.UK Design Sysem testing grounds</h1>
+
+      <p class="govuk-body-l">{{releaseVersion | log }}</p>
+    </div>
+
+  </div>
+
+  <hr class="govuk-section-break govuk-section-break--visible">
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-one-third govuk-!-margin-top-6">
+
+
+    </div>
+    <div class="govuk-grid-column-one-third govuk-!-margin-top-6">
+
+    </div>
+    <div class="govuk-grid-column-one-third govuk-!-margin-top-6">
+
+    </div>
+
+  </div>
+{% endblock %}

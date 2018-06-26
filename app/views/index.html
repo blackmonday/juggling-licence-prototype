@@ -1,0 +1,151 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+        
+        <h1 class="govuk-heading-xl">
+        The GOV.UK Design System testing grounds
+        <span class="govuk-caption-xl govuk-!-margin-top-3">{{releaseVersion}}</span>
+        </h1>
+        
+        <p class="govuk-body govuk-!-padding-bottom-3">This is the new GOV.UK tabs component slightly modified to align more closely with the CPP pattern that has tested well:</p>
+
+        <div class="govuk-tabs govuk-!-margin-bottom-6" data-module="tabs">
+          <h2 class="govuk-tabs__title">
+            Contents
+          </h2>
+
+          <ul class="govuk-tabs__list">
+            <li class="govuk-tabs__list-item">
+              <a class="govuk-tabs__tab" href="#past-day">
+                  Case details
+                </a>
+            </li>
+            <li class="govuk-tabs__list-item">
+              <a class="govuk-tabs__tab" href="#past-week">
+                  Defendant details
+                </a>
+            </li>
+            <li class="govuk-tabs__list-item">
+              <a class="govuk-tabs__tab" href="#past-month">
+                  Income
+                </a>
+            </li>
+            <li class="govuk-tabs__list-item">
+              <a class="govuk-tabs__tab" href="#past-year">
+                  Documents
+                </a>
+            </li>
+          </ul>
+
+          <section class="govuk-tabs__panel" id="past-day">
+            <h2 class="govuk-heading-m">Case details</h2>
+            <table class="govuk-table">
+              <tbody class="govuk-table__body">
+                <tr class="govuk-table__row" style="border-bottom:none">
+                  <td class="govuk-table__cell govuk-!-font-weight-bold">Case status</td>
+                  <td class="govuk-table__cell ">Completed</td>
+                </tr>
+                <tr class="govuk-table__row">
+                  <td class="govuk-table__cell govuk-!-font-weight-bold">Prosecutor</td>
+                  <td class="govuk-table__cell ">Transport for London</td>
+                </tr>
+                <tr class="govuk-table__row">
+                  <td class="govuk-table__cell govuk-!-font-weight-bold">Notice served</td>
+                  <td class="govuk-table__cell ">30 April 2018</td>
+                </tr>
+                <tr class="govuk-table__row">
+                  <td class="govuk-table__cell govuk-!-font-weight-bold">Inerpreter requested</td>
+                  <td class="govuk-table__cell ">Welsh</td>
+                </tr>
+              </tbody>
+            </table>
+
+          </section>
+          <section class="govuk-tabs__panel" id="past-week">
+            <h2 class="govuk-heading-m">Defendant details</h2>
+            <table class="govuk-table govuk-!-margin-bottom-3">
+              <tbody class="govuk-table__body">
+                <tr class="govuk-table__row">
+                  <td class="govuk-table__cell govuk-!-font-weight-bold">Name</td>
+                  <td class="govuk-table__cell ">Billy SMITH</td>
+                </tr>
+                <tr class="govuk-table__row">
+                  <td class="govuk-table__cell govuk-!-font-weight-bold">Date of birth</td>
+                  <td class="govuk-table__cell ">4 April 1970 (46 years old)</td>
+                </tr>
+                <tr class="govuk-table__row">
+                  <td class="govuk-table__cell govuk-!-font-weight-bold">Address</td>
+                  <td class="govuk-table__cell ">7 Rock Road<br>London<br>SE3 8YH</td>
+                </tr>
+                <tr class="govuk-table__row">
+                  <td class="govuk-table__cell govuk-!-font-weight-bold">Email</td>
+                  <td class="govuk-table__cell"><a href="#" class="govuk-link">Add email</a></td>
+                </tr>
+                <tr class="govuk-table__row">
+                  <td class="govuk-table__cell govuk-!-font-weight-bold">Home telephone</td>
+                  <td class="govuk-table__cell"><a href="#" class="govuk-link">Add home telephone</a></td>
+                </tr>
+                <tr class="govuk-table__row">
+                  <td class="govuk-table__cell govuk-!-font-weight-bold">Mobile</td>
+                  <td class="govuk-table__cell"><a href="#" class="govuk-link">Add mobile</a></td>
+                </tr>
+              </tbody>
+            </table>
+            <a href="#" class="">Change personal details</a>
+          </section>
+          <section class="govuk-tabs__panel" id="past-month">
+            <h2 class="govuk-heading-m">Income</h2>
+            <table class="govuk-table govuk-!-margin-bottom-3">
+              <tbody class="govuk-table__body">
+                <tr class="govuk-table__row">
+                  <td class="govuk-table__cell govuk-!-font-weight-bold">National Insurance number</td>
+                  <td class="govuk-table__cell"><a href="#" class="govuk-link">Add National Insurance number</a></td>
+                </tr>
+                <tr class="govuk-table__row">
+                  <td class="govuk-table__cell govuk-!-font-weight-bold">Net income (converted to weekly)</td>
+                  <td class="govuk-table__cell"><a href="#" class="govuk-link">Add net income</a></td>
+                </tr>
+                <tr class="govuk-table__row">
+                  <td class="govuk-table__cell govuk-!-font-weight-bold">Claming benefits</td>
+                  <td class="govuk-table__cell"><a href="#" class="govuk-link">Add benefit</a></td>
+                </tr>
+              </tbody>
+            </table>
+            <a href="#" class="">Change income</a>
+          </section>
+          <section class="govuk-tabs__panel" id="past-year">
+            <h2 class="govuk-heading-m">Documents</h2>
+            <table class="govuk-table govuk-!-margin-bottom-3">
+              <tbody class="govuk-table__body">
+                <tr class="govuk-table__row">
+                  <td class="govuk-table__cell">Uploaded documents</td>
+                    <td class="govuk-table__cell"><a href="#" class="govuk-link">SJP notice</a></td>
+                </tr>
+              </tbody>
+            </table>
+            <a href="#">Upload documents</a>
+            <h2 class="govuk-heading-m govuk-!-padding-top-9">Online plea</h2>
+            <table class="govuk-table">
+              <tbody class="govuk-table__body">
+                <tr class="govuk-table__row">
+                  <td class="govuk-table__cell"><a href="#" class="govuk-link">Defendant's online plea</a></td>
+                </tr>
+              </tbody>
+            </table>
+        </section>
+        </div>        
+
+        
+        
+        
+
+      </div>
+</div>
+
+{% endblock %}
